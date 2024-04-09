@@ -1,6 +1,6 @@
 import streamlit as st
 #Definir el título
-st.title('Mi primer app')
+st.title('App de análisis de datos predictivo para calificación de riesgo')
 
 st.write("Esta aplicación tiene el objetivo de elevar cualquier número al cuadrado:")
 
