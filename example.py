@@ -1,8 +1,14 @@
 import streamlit as st
-#Definir el título
+
+st.set_page_config(
+    page_title="Home",
+    page_icon="💻",
+)
+
 st.title('App de análisis de datos predictivo para calificación de riesgo')
 
-st.write("Esta aplicación tiene el objetivo de elevar cualquier número al cuadrado:")
+st.write("El objetivo de este proyecto es realizar un MVP que muestre un reporte de análisis de datos predictivo para establecer la calificación de riesgo de potenciales clientes, al momento de otorgar préstamos.")
 
-x = st.number_input('Introduzca un número:')  
-st.write('El número al cuadrado es:', x**2)
+salary = st.number_input('Ingrese su salario:') 
+
+st.write(f"Su salario es: ${salary}")
