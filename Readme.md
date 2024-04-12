@@ -18,15 +18,13 @@ Giuseppe Navarro: Data Scientist
 
 Laura Gutierrez: Data Scientist
 
-Miriam Sarli: Data Engineer
-
 Gustavo Cevallos: Analista de Datos
 
 Joaquin Vasquez: Backend
 
-Omar Martínez: Business Analyst
 
-Tecnologías Utilizadas
+
+## Tecnologías Utilizadas
 
 Lenguajes de programación: Python
 
