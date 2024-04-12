@@ -26,6 +26,6 @@ estado_civil = st.radio("Cual es su estado civil?", ('Soltero / no casado', 'Cas
 
 forma_habitar = st.radio("En que tipo de residenciadonde habita?", ("Casa/apartamento", "Apartamento alquilado", "Con los padres", "Apartamento municipal", "Apartamento oficina", "Apartamento cooperativa"))
 
-ocupacion = st.radio("Que tipo de trabajo tiene?", ('Obreros' 'Personal de base' 'Otros' 'Directivos' 'Conductores' 'Personal de ventas'))
+ocupacion = st.radio("Que tipo de trabajo tiene?", ('Obreros', 'Personal de base', 'Otros', 'Directivos', 'Conductores', 'Personal de ventas'))
 
 dia_inicio_proceso = st.radio("Que dia de la semana pidió el credito?", ("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"))
