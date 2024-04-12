@@ -10,7 +10,7 @@ st.title('App de análisis de datos predictivo para calificación de riesgo')
 st.write("El objetivo de este proyecto es realizar un MVP que muestre un reporte de análisis de datos predictivo para establecer la calificación de riesgo de potenciales clientes, al momento de otorgar préstamos.")
 
 
-tipo_contrato = st.radio("Que tipo de contrato tiene?", ("Cash loans","Revolving loans"))
+tipo_contrato = st.radio("Que tipo de contrato tiene?", ("Préstamos de tesorería", "Préstamos renovables"))
 
 auto_propio = st.radio("Cuenta con auto propio?", ("Si", "No"))
 
