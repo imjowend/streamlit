@@ -1,4 +1,4 @@
-### Documentación del Proyecto: Plataforma de Análisis de Datos Predictivo para Calificación de Riesgo
+<em align="center"> Documentación del Proyecto: Plataforma de Análisis de Datos Predictivo para Calificación de Riesgo </em>
 
 Descripción del Proyecto
 
@@ -15,18 +15,31 @@ El conjunto de datos utilizado se denomina "Conjunto de datos de préstamos de m
 Colaboradores y Roles
 
 Giuseppe Navarro: Data Scientist
+
 Laura Gutierrez: Data Scientist
+
 Miriam Sarli: Data Engineer
+
 Gustavo Cevallos: Analista de Datos
+
 Joaquin Vasquez: Backend
+
 Omar Martínez: Business Analyst
+
 Tecnologías Utilizadas
+
 Lenguajes de programación: Python
+
 Bibliotecas Python: Scikit-learn / Apache Spark
+
 Herramientas de visualización: Power BI
+
 Bases de datos: MySQL
+
 Herramientas de Data Science: Jupyter Notebook
+
 Sistema de control de versiones: GIT
+
 
 Historias de Usuario
 
