@@ -15,3 +15,8 @@ st.write(f"Su salario es: ${salary}")
 
 study = st.radio("¿Cual es su nivel de estudio alcanzado?", ("Secundario completo", "Secundario incompleto", "Terceario completo", "Terceario incompleto", "Universidad incompleto"))
 
+tipo_contrato = st.radio("Que tipo de contrato tiene?", ("Cash loans","Revolving loans"))
+
+auto_propio = st.radio("Cuenta con auto propio?", ("Si", "No"))
+
+casa_depto_propio = st.radio("Cuenta con departamento propio?", ("Si", "No"))
