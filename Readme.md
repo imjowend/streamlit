@@ -8,6 +8,8 @@ La evaluación de calificación de crédito es esencial para la obtención de pr
 
 El objetivo principal es crear un MVP que proporcione un reporte de análisis de datos predictivo para determinar la calificación de riesgo de potenciales clientes al solicitar un préstamo.
 
+Este proyecto se enfoca en utilizar el análisis de datos y el modelado predictivo para mejorar el proceso de calificación de riesgo al otorgar préstamos. La combinación de tecnologías y la colaboración de un equipo multidisciplinario permitirá alcanzar los objetivos establecidos.
+
 ## Dataset
 
 El conjunto de datos utilizado se denomina "Conjunto de datos de préstamos de microfinanzas". Contiene información recopilada de solicitudes de préstamos, historial crediticio, historial de pagos, saldos de tarjetas de crédito, entre otros.
@@ -42,7 +44,9 @@ Sistema de control de versiones: GIT
 ## Historias de Usuario
 
 Como cliente (por ejemplo, un Banco), deseo que los colaboradores de la empresa puedan acceder a una aplicación sencilla para evaluar rápidamente la calificación crediticia de potenciales clientes.
+
 Como usuario de la aplicación, quiero una forma ágil de evaluar solicitudes de préstamos para optimizar tiempos.
+
 Como usuario de la aplicación, deseo que la aplicación me proporcione el monto de préstamo máximo según el perfil crediticio del cliente para ser más eficiente en el trabajo.
 Conclusiones
-Este proyecto se enfoca en utilizar el análisis de datos y el modelado predictivo para mejorar el proceso de calificación de riesgo al otorgar préstamos. La combinación de tecnologías y la colaboración de un equipo multidisciplinario permitirá alcanzar los objetivos establecidos.
+
