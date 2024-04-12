@@ -20,3 +20,5 @@ tipo_contrato = st.radio("Que tipo de contrato tiene?", ("Cash loans","Revolving
 auto_propio = st.radio("Cuenta con auto propio?", ("Si", "No"))
 
 casa_depto_propio = st.radio("Cuenta con departamento propio?", ("Si", "No"))
+
+quien_acompano = st.radio("Quien la acompaño al momento de pedir el credito", ('Sin compañia', 'Familia', 'Conyugue o Pareja', 'Niños', 'Grupo de personas'))
