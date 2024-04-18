@@ -9,12 +9,19 @@ st.title('App de análisis de datos predictivo para calificación de riesgo')
 
 st.write("El objetivo de este proyecto es realizar un MVP que muestre un reporte de análisis de datos predictivo para establecer la calificación de riesgo de potenciales clientes, al momento de otorgar préstamos.")
 
+dataset = []
+#1
+casa_depto_propio = st.radio("Cuenta con departamento propio?", ("Si", "No"))
+#2
+dia_inicio_proceso = st.radio("Que dia de la semana pidió el credito?", ("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"))
+#3
+telefono_trabajo = st.radio("Entregó telefono de trabajo cuando postuló?", ("Si", "No"))
 
 tipo_contrato = st.radio("Que tipo de contrato tiene?", ("Préstamos de tesorería", "Préstamos renovables"))
 
 auto_propio = st.radio("Cuenta con auto propio?", ("Si", "No"))
 
-casa_depto_propio = st.radio("Cuenta con departamento propio?", ("Si", "No"))
+
 
 quien_acompano = st.radio("Quien la acompaño al momento de pedir el credito", ('Sin compañia', 'Familia', 'Conyugue o Pareja', 'Niños', 'Grupo de personas'))
 
@@ -28,11 +35,11 @@ forma_habitar = st.radio("En que tipo de residencia habita?", ("Casa/apartamento
 
 ocupacion = st.radio("Que tipo de trabajo tiene?", ('Obreros', 'Personal de base', 'Otros', 'Directivos', 'Conductores', 'Personal de ventas'))
 
-dia_inicio_proceso = st.radio("Que dia de la semana pidió el credito?", ("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"))
+
 
 tipo_organizacion_trabajo = st.radio("En que area trabaja",('Empresas', 'Educación', 'Administración', 'Otros', 'Construcción', 'Medicina', 'Autónomos', 'Transporte', 'Inmobiliario', 'Comercio', 'Industria', 'Fuerzas Armadas', 'Finanzas'))
 
-telefono_trabajo = st.radio("Entregó telefono de trabajo cuando postuló?", ("Si", "No"))
+
 
 telefono_casa = st.radio("Entregó telefono de casa cuando postuló?", ("Si", "No"))
 
