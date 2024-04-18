@@ -10,12 +10,21 @@ st.title('App de análisis de datos predictivo para calificación de riesgo')
 st.write("El objetivo de este proyecto es realizar un MVP que muestre un reporte de análisis de datos predictivo para establecer la calificación de riesgo de potenciales clientes, al momento de otorgar préstamos.")
 
 dataset = []
+
+auto_propio = st.radio("Cuenta con auto propio?", ("Si", "No"))
+
 #1
 casa_depto_propio = st.radio("Cuenta con departamento propio?", ("Si", "No"))
+
+quien_acompano = st.radio("Quien la acompaño al momento de pedir el credito", ('Sin compañia', 'Familia', 'Conyugue o Pareja', 'Niños', 'Grupo de personas'))
+
 #2
 dia_inicio_proceso = st.radio("Que dia de la semana pidió el credito?", ("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"))
 #3
 telefono_trabajo = st.radio("Entregó telefono de trabajo cuando postuló?", ("Si", "No"))
+
+telefono_casa = st.radio("Entregó telefono de casa cuando postuló?", ("Si", "No"))
+
 #4
 telefono_casa2 = st.radio("Entregó telefono de casa2 cuando postuló?", ("Si", "No"))
 #5
@@ -24,6 +33,10 @@ reg_residencia_diferente = st.radio("Si la residencia indicada es distinta a la 
 reg_trabajo_diferente= st.radio("Si la direccion de trabajo indicada es distinta a la real", ("Si", "No") )
 #7
 city_residencia_diferente= st.radio("Si la ciudad de residencia indicada es distinta a la real", ("Si", "No") )
+
+city_trabajo_diferente= st.radio("Si la ciudad de trabajo indicada es distinta a la real", ("Si", "No") )
+
+live_trabajo_diferente= st.radio("Si la ciudad de trabajo indicada es distinta a donde vive", ("Si", "No") )
 #8 Tiene: Cash loans y Revolving loans
 tipo_contrato = st.radio("Que tipo de contrato tiene?", ("Préstamos de tesorería", "Préstamos renovables"))
 #9 Tiene: Pensioner, Unemployed y Working
@@ -39,13 +52,25 @@ ocupacion = st.radio("Que tipo de trabajo tiene?", ('Obreros', 'Personal de base
 #14
 tipo_organizacion_trabajo = st.radio("En que area trabaja",('Empresas', 'Educación', 'Administración', 'Otros', 'Construcción', 'Medicina', 'Autónomos', 'Transporte', 'Inmobiliario', 'Comercio', 'Industria', 'Fuerzas Armadas', 'Finanzas'))
 
-#De aca para abajo no salen en el Array
-auto_propio = st.radio("Cuenta con auto propio?", ("Si", "No"))
+#Inputs numericos
+monto_credito = st.number_input("¿Cuál es el monto del crédito que solicita?")
 
-quien_acompano = st.radio("Quien la acompaño al momento de pedir el credito", ('Sin compañia', 'Familia', 'Conyugue o Pareja', 'Niños', 'Grupo de personas'))
+anios_edad =  st.number_input("¿Cuál es su edad?")
 
-telefono_casa = st.radio("Entregó telefono de casa cuando postuló?", ("Si", "No"))
+cant_miembros_fam = st.number_input("¿Cuántas personas hay en su círculo familiar?")
 
-city_trabajo_diferente= st.radio("Si la ciudad de trabajo indicada es distinta a la real", ("Si", "No") )
+obs_30_cnt_circulo_social = st.number_input("Cantidad de deudas impagas del cliente en un período de 30 días antes de la fecha de solicitud del crédito")
 
-live_trabajo_diferente= st.radio("Si la ciudad de trabajo indicada es distinta a donde vive", ("Si", "No") )
+def_30_cnt_circulo_social = st.number_input("Cantidad de personas con las que el cliente tiene una deuda impaga en los últimos 30 días")
+
+monto_req_credito_anual = st.number_input("Cantidad de solicitudes de crédito en el último año")
+
+cant_hijos = st.number_input("Cuantos hijos tiene?")
+
+monto_ingreso_total = st.number_input("Monto del ingreso total del cliente")
+
+anualidad_mensual = st.number_input("Anualidad del crédito")
+
+precio_bienes = st.number_input("Precio de los bienes para los cuales se otorga el crédito")
+
+anios_empleado = st.number_input("Antigüedad en el empleo actual")
