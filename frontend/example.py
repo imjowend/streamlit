@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_components.html import components
 
 st.set_page_config(
     page_title="Home",
@@ -77,15 +76,4 @@ precio_bienes = st.number_input("Precio de los bienes para los cuales se otorga 
 anios_empleado = st.number_input("Antigüedad en el empleo actual")
 
 
-# Revisa la URL con el dueño del reporte para asegurarte de que no contenga información sensible
-url = "https://app.powerbi.com/view?r=eyJrIjoiNjVjNDVlN2QtYjk1OS00NTg4LTk1ODYtZGFmOTIzZGU1ODdjIiwidCI6ImI1ZDc4OTI3LTI1ZDAtNDRhOS04MzcwLWQ4NmU1N2M3YmE5NiIsImMiOjR9"  # Asegúrate de usar una URL adecuada
-
-# Ajusta el ancho y alto según tus necesidades
-width = 600
-height = 373.5
-
-html_code = f"""
-<iframe title="Dashboard Train" width="{width}" height="{height}" src="{url}" frameborder="0" allowFullScreen="true"></iframe>
-"""
-
-st.components.html(html_code, height=height, width=width)
+st.write("<iframe width='1000' height='600' src='https://app.powerbi.com/view?r=eyJrIjoiZTFlNDM1ZjctN2VjYS00ZDFhLTljZTItNWRhOTZmZDBmMjcxIiwidCI6ImI1ZDc4OTI3LTI1ZDAtNDRhOS04MzcwLWQ4NmU1N2M3YmE5NiIsImMiOjR9' style='display:block;margin:auto;'></iframe>", unsafe_allow_html=True)
