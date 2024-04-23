@@ -75,9 +75,5 @@ precio_bienes = st.number_input("Precio de los bienes para los cuales se otorga 
 
 anios_empleado = st.number_input("Antigüedad en el empleo actual")
 
-powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiNjVjNDVlN2QtYjk1OS00NTg4LTk1ODYtZGFmOTIzZGU1ODdjIiwidCI6ImI1ZDc4OTI3LTI1ZDAtNDRhOS04MzcwLWQ4NmU1N2M3YmE5NiIsImMiOjR9"
-
-    # Configura el iframe con el enlace de Power BI
-st.components.v1.iframe(powerbi_url, width=800, height=600)
 
 st.write("<iframe width='1000' height='600' src='https://app.powerbi.com/view?r=eyJrIjoiNjVjNDVlN2QtYjk1OS00NTg4LTk1ODYtZGFmOTIzZGU1ODdjIiwidCI6ImI1ZDc4OTI3LTI1ZDAtNDRhOS04MzcwLWQ4NmU1N2M3YmE5NiIsImMiOjR9' style='display:block;margin:auto;'></iframe>", unsafe_allow_html=True)
