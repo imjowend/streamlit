@@ -74,3 +74,8 @@ anualidad_mensual = st.number_input("Anualidad del crédito")
 precio_bienes = st.number_input("Precio de los bienes para los cuales se otorga el crédito")
 
 anios_empleado = st.number_input("Antigüedad en el empleo actual")
+
+powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiNjVjNDVlN2QtYjk1OS00NTg4LTk1ODYtZGFmOTIzZGU1ODdjIiwidCI6ImI1ZDc4OTI3LTI1ZDAtNDRhOS04MzcwLWQ4NmU1N2M3YmE5NiIsImMiOjR9"
+
+    # Configura el iframe con el enlace de Power BI
+st.components.v1.iframe(powerbi_url, width=800, height=600)
