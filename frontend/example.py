@@ -19,7 +19,7 @@ casa_depto_propio = st.radio("Cuenta con departamento propio?", ("Si", "No"))
 quien_acompano = st.selectbox("Quien la acompaño al momento de pedir el credito", ['Sin compañia', 'Familia', 'Conyugue o Pareja', 'Niños', 'Grupo de personas'])
 
 #2
-dia_inicio_proceso = st.radio("Que dia de la semana pidió el credito?", ("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"))
+dia_inicio_proceso = st.selectbox("Que dia de la semana pidió el credito?", ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"])
 #3
 telefono_trabajo = st.radio("Entregó telefono de trabajo cuando postuló?", ("Si", "No"))
 
@@ -38,7 +38,7 @@ city_trabajo_diferente= st.radio("Si la ciudad de trabajo indicada es distinta a
 
 live_trabajo_diferente= st.radio("Si la ciudad de trabajo indicada es distinta a donde vive", ("Si", "No") )
 #8 Tiene: Cash loans y Revolving loans
-tipo_contrato = st.radio("Que tipo de contrato tiene?", ("Préstamos de tesorería", "Préstamos renovables"))
+tipo_contrato = st.selectbox("Que tipo de contrato tiene?", ["Préstamos de tesorería", "Préstamos renovables"])
 #9 Tiene: Pensioner, Unemployed y Working
 estatus_laboral = st.selectbox("Cual es su situacion laboral actual?", ['Trabajador', 'Funcionario', 'Socio comercial', 'Pensionista', 'Desempleado', 'Estudiante', 'Empresario', 'Baja por maternidad'])
 #10 Tiene: Academic degree, Higher education, Incomplete higher, Lower secondary, Secondary/ secondary special
