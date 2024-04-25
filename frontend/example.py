@@ -40,17 +40,17 @@ live_trabajo_diferente= st.radio("Si la ciudad de trabajo indicada es distinta a
 #8 Tiene: Cash loans y Revolving loans
 tipo_contrato = st.radio("Que tipo de contrato tiene?", ("Préstamos de tesorería", "Préstamos renovables"))
 #9 Tiene: Pensioner, Unemployed y Working
-estatus_laboral = st.radio("Cual es su situacion laboral actual?", ('Trabajador', 'Funcionario', 'Socio comercial', 'Pensionista', 'Desempleado', 'Estudiante', 'Empresario', 'Baja por maternidad'))
+estatus_laboral = st.radio("Cual es su situacion laboral actual?", ['Trabajador', 'Funcionario', 'Socio comercial', 'Pensionista', 'Desempleado', 'Estudiante', 'Empresario', 'Baja por maternidad'])
 #10 Tiene: Academic degree, Higher education, Incomplete higher, Lower secondary, Secondary/ secondary special
-nivel_educacion = st.radio("Cual es su nivel de educacion?", ('Secundaria / secundaria especial', 'Educación superior', 'Superior incompleta', 'Secundaria inferior', 'Titulación académica'))
+nivel_educacion = st.radio("Cual es su nivel de educacion?", ['Secundaria / secundaria especial', 'Educación superior', 'Superior incompleta', 'Secundaria inferior', 'Titulación académica'])
 #11
-estado_civil = st.radio("Cual es su estado civil?", ('Soltero / no casado', 'Casado', 'Matrimonio civil', 'Viudo', 'Separado'))
+estado_civil = st.radio("Cual es su estado civil?", ['Soltero / no casado', 'Casado', 'Matrimonio civil', 'Viudo', 'Separado'])
 #12
-forma_habitar = st.radio("En que tipo de residencia habita?", ("Casa/apartamento", "Apartamento alquilado", "Con los padres", "Apartamento municipal", "Apartamento oficina", "Apartamento cooperativa"))
+forma_habitar = st.radio("En que tipo de residencia habita?", ["Casa/apartamento", "Apartamento alquilado", "Con los padres", "Apartamento municipal", "Apartamento oficina", "Apartamento cooperativa"])
 #13
-ocupacion = st.radio("Que tipo de trabajo tiene?", ('Obreros', 'Personal de base', 'Otros', 'Directivos', 'Conductores', 'Personal de ventas'))
+ocupacion = st.radio("Que tipo de trabajo tiene?", ['Obreros', 'Personal de base', 'Otros', 'Directivos', 'Conductores', 'Personal de ventas'])
 #14
-tipo_organizacion_trabajo = st.radio("En que area trabaja",('Empresas', 'Educación', 'Administración', 'Otros', 'Construcción', 'Medicina', 'Autónomos', 'Transporte', 'Inmobiliario', 'Comercio', 'Industria', 'Fuerzas Armadas', 'Finanzas'))
+tipo_organizacion_trabajo = st.selectbox("En que area trabaja",['Empresas', 'Educación', 'Administración', 'Otros', 'Construcción', 'Medicina', 'Autónomos', 'Transporte', 'Inmobiliario', 'Comercio', 'Industria', 'Fuerzas Armadas', 'Finanzas'])
 
 #Inputs numericos
 monto_credito = st.number_input("¿Cuál es el monto del crédito que solicita?")
