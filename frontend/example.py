@@ -44,7 +44,7 @@ estatus_laboral = st.selectbox("Cual es su situacion laboral actual?", ['Trabaja
 #10 Tiene: Academic degree, Higher education, Incomplete higher, Lower secondary, Secondary/ secondary special
 nivel_educacion = st.selectbox("Cual es su nivel de educacion?", ['Secundaria / secundaria especial', 'Educación superior', 'Superior incompleta', 'Secundaria inferior', 'Titulación académica'])
 #11
-estado_civil = st.selectbox("Cual es su estado civil?", ['Soltero / no casado', 'Casado', 'Matrimonio civil', 'Viudo', 'Separado'])
+estado_civil = st.selectbox("Cual es su estado civil?", ['Soltero / no casado', 'Casado', 'Viudo', 'Separado'])
 #12
 forma_habitar = st.selectbox("En que tipo de residencia habita?", ["Casa/apartamento", "Apartamento alquilado", "Con los padres", "Apartamento municipal", "Apartamento oficina", "Apartamento cooperativa"])
 #13
