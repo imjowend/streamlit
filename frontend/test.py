@@ -24,7 +24,7 @@ estatus_laboral_to_english = {
 }
 nivel_educacion_to_english = {
     "Secundaria / secundaria especial":"Secondary/ secondary special",
-    "Desempleado":"Higher education",
+    "Educación superior":"Higher education",
     "Superior incompleta":"Incomplete higher",
     "Secundaria inferior":"Lower secondary",
     "Titulación académica":"Academic degree"
@@ -117,32 +117,32 @@ dataset = {
 }
 
 
-tipo_contrato = print("Quien la acompaño al momento de pedir el credito")
+tipo_contrato = input("Quien la acompaño al momento de pedir el credito")
 tipo_contrato_true = tipo_contrato_to_english[tipo_contrato]
 clave = f'tipo_contrato_{tipo_contrato_true}'
 dataset[clave] = True
 
-estatus_laboral = print("Cual es su situacion laboral actual?")
+estatus_laboral = input("Cual es su situacion laboral actual?")
 estatus_laboral_true = estatus_laboral_to_english[estatus_laboral]
 clave = f'estatus_laboral_{estatus_laboral_true}'
 dataset[clave] = True
 
-nivel_educacion = print("Cual es su nivel de educacion?")
+nivel_educacion = input("Cual es su nivel de educacion?")
 nivel_educacion_true = nivel_educacion_to_english[nivel_educacion]
 clave = f'nivel_educacion_{nivel_educacion_true}'
 dataset[clave] = True
 
-estado_civil = print("Cual es su estado civil?")
+estado_civil = input("Cual es su estado civil?")
 estado_civil_true = estado_civil_to_english[estado_civil]
 clave = f'estado_civil_{estado_civil_true}'
 dataset[clave] = True
 
-forma_habitar = print("En que tipo de residencia habita?")
+forma_habitar = input("En que tipo de residencia habita?")
 forma_habitar_true = forma_habitar_to_english[forma_habitar]
 clave = f'forma_habitar_{forma_habitar_true}'
 dataset[clave] = True
 
-ocupacion = print("Que tipo de trabajo tiene?")
+ocupacion = input("Que tipo de trabajo tiene?")
 ocupacion_true = ocupacion_to_english[ocupacion]
 clave = f'ocupacion_{ocupacion_true}'
 dataset[clave] = True
@@ -152,10 +152,11 @@ tipo_organizacion = input("¿Qué tipo de organización de trabajo es? ")
 tipo_organizacion_trabajo_true = tipo_organizacion_trabajo_to_english[tipo_organizacion]
 clave = f'tipo_organizacion_trabajo_{tipo_organizacion_trabajo_true}'
 dataset[clave] = True
-print("Dataset resultante:", dataset)
 
-tipo_cuenta = print("¿Qué tipo de cuenta bancaria tiene el solicitante?")
+tipo_cuenta = input("¿Qué tipo de cuenta bancaria tiene el solicitante?")
 tipo_cuenta_trabajo_true = tipo_cuenta_trabajo_to_english[tipo_cuenta]
 clave = f'tipo_cuenta_trabajo_{tipo_cuenta_trabajo_true}'
 dataset[clave] = True
+
+
 print("Dataset resultante:", dataset)
