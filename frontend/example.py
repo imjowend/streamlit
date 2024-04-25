@@ -40,7 +40,7 @@ live_trabajo_diferente= st.radio("Si la ciudad de trabajo indicada es distinta a
 #8 Tiene: Cash loans y Revolving loans
 tipo_contrato = st.selectbox("Que tipo de contrato tiene?", ["Préstamos de tesorería", "Préstamos renovables"])
 #9 Tiene: Pensioner, Unemployed y Working
-estatus_laboral = st.selectbox("Cual es su situacion laboral actual?", ['Trabajador', 'Funcionario', 'Socio comercial', 'Pensionista', 'Desempleado', 'Estudiante', 'Empresario', 'Baja por maternidad'])
+estatus_laboral = st.selectbox("Cual es su situacion laboral actual?", ['Trabajador', 'Pensionista', 'Desempleado'])
 #10 Tiene: Academic degree, Higher education, Incomplete higher, Lower secondary, Secondary/ secondary special
 nivel_educacion = st.selectbox("Cual es su nivel de educacion?", ['Secundaria / secundaria especial', 'Educación superior', 'Superior incompleta', 'Secundaria inferior', 'Titulación académica'])
 #11
