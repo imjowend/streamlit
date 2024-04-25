@@ -16,7 +16,7 @@ auto_propio = st.radio("Cuenta con auto propio?", ("Si", "No"))
 #1
 casa_depto_propio = st.radio("Cuenta con departamento propio?", ("Si", "No"))
 
-quien_acompano = st.radio("Quien la acompaño al momento de pedir el credito", ('Sin compañia', 'Familia', 'Conyugue o Pareja', 'Niños', 'Grupo de personas'))
+quien_acompano = st.selectbox("Quien la acompaño al momento de pedir el credito", ['Sin compañia', 'Familia', 'Conyugue o Pareja', 'Niños', 'Grupo de personas'])
 
 #2
 dia_inicio_proceso = st.radio("Que dia de la semana pidió el credito?", ("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"))
